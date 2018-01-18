@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 3 --- Ljud och video </title>
+</head>
+<body>
+    <h1>Ljud och film</h1>
+    <h2>Ljud</h2>
+    <audio controls>
+            <source src="../lektion2/exc-lekt2-createPage/ljudfiler/DidgeridooAttack.wav" type="audio/wav">
+
+    </audio>
+
+    <h2>Video</h2>
+    <p>
+            <video width="320" height="240" controls>
+                    <source src="../lektion2/exc-lekt2-createPage/video/testfilm.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video>
+    </p>
+
+    <h2>Bädda in från Youtube</h2>
+        <p>Det här är väldigt, VÄLDIGT bra!!! 
+            <iframe width="640" 
+            height="360" 
+            src="https://www.youtube.com/embed/dxqTDPNW2Pw?list=RDdxqTDPNW2Pw" 
+            allowfullscreen></iframe> <br>
+Bra att veta att Youtube har fel internt i sin inbäddningskod. <br>
+Det innebär att det ges varningar i valideringssystemet.
+Allow t.ex, och border. 
+        </p>
+<!--       allow="autoplay; encrypted-media"  är otillåten rad, men finns i Youtubes kod. 
+Genererar felmeddelande i validering. Även border. -->
+      
+
+</body>
+</html>

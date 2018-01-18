@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 2 - länkar </title>
+</head>
+
+<body>
+    <h1>Länkar</h1>
+    Först och främst - när jag först inte hade ändrat språk till sv, protesterade validator. <br>
+    Felmeddelandet borta när jag ändrade i html-fältet. <br>
+    Allmänt - href etc brukar skrivas före target. Koden funkar dock ändå. <br>
+    <h2>Externa länkar</h2>
+    == absoluta länkar.
+    <br>
+    <p>Hela adressen måste anges, inkl http etc.
+        <br> Förkortning: a enter ger hela href-mallen.
+        <br> Markören sätter sig automatiskt mellan citationstecknen.
+        <br> NU har jag skrivit "aftonbladet.se" som text, men ingen ankartext.
+        <br> Visas inget.
+        <a href="aftonbladet.se"></a>
+    </p>
+    <p> Nu skriver jag istället aftonbladet.se som ref, och Aftonbladet med ankartext, dvs mellan start- och sluttagg.
+        <br>
+        <a href="aftonbladet.se">Aftonbladet</a>
+        <br> Då syns
+        <u>Aftonbladet</u>.
+        <br> Det genererar alltså något som beter sig som en länk, men som inte leder någonstans.
+        <br> Allt detta eftersom http:// saknas.
+    </p>
+    <p>Nu skriver jag rätt istället.
+        <br>
+        <a href="http://aftonbladet.se">Aftonbladet</a>
+        <br> Nu har jag skrivit in http://aftonbladet.se.
+        <br> Sidan öppnas över där jag är, vilket är lite störande.
+        <br> VIll jag att sidan öppnas i egen flik måste jag säga till explicit.
+        <br>
+    </p>
+    <p>Så det gör jag nu.
+        <br>
+        <a href="http://aftonbladet.se" target="_blank">Aftonbladet</a>
+        <br> a href = http://aftonbladet.se
+        <br> target = _blank
+        <br>
+    </p>
+    <p>Nu lägger jag in en redan befintlig länk istället.
+        <br>
+        <a href="https://www.w3schools.com/tags/default.asp" target="_blank">Här är länken till w3schools</a>
+        <br> https://www.w3schools.com/tags/default.asp, helt enkelt.
+        <br> Och "Här är länken till w3schools" är min ankartext.
+    </p>
+    <p>Samma procedur för att länka till bild.
+        <br>
+        <a href="https://www.google.se/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Faa%2FVildmarksv%25C3%25A4gen_Stekenjokk_Klimpfj%25C3%25A4ll.jpg%2F300px-Vildmarksv%25C3%25A4gen_Stekenjokk_Klimpfj%25C3%25A4ll.jpg&imgrefurl=https%3A%2F%2Fsv.wikipedia.org%2Fwiki%2FStekenjokk&docid=vjniIkjJWMJNEM&tbnid=g9YhPjBnzt5dUM%3A&vet=10ahUKEwi8y-WVltzYAhWDkSwKHfTmDGcQMwg-KAAwAA..i&w=300&h=225&safe=active&bih=684&biw=1422&q=stekenjokk&ved=0ahUKEwi8y-WVltzYAhWDkSwKHfTmDGcQMwg-KAAwAA&iact=mrc&uact=8"
+            target="_blank">Länk till bild från Stekenjokk</a>
+        <br> Länken är lång som f-n, men den FÅR inte brytas!!! Då kan den inte läsas. <br>
+        Viktigt - om jag vill använda en bild, KLISTRA IN alltså, måste jag kolla upphovsrätt / copyright. <br>
+        Länka får jag göra, däremot. <br>
+        Exv Google - markera bild, verktyg, användningsrättigheter. 
+    </p>
+    <p>och jag kanske kan länka till Mahmouds github? :-D
+        <br> <a href="https://github.com/mahmudalhakim/frontend-vt18" target="_blank">Mahmuds Github</a>
+    </p>
+    <p>OBS - att om jag nu vill skriva ut hur jag gör:
+        <br> använd för bövelen korrekt teckenkod. Då går koden att kopiera och klista bara rakt av. <br>
+        t ex & och lt, ger tecknet < . <br>
+        & och gt ger tecknet >. <br>
+        Validator däremot gillar INTE att jag använder kod-tecken till annat än kod. Det genererar en varning. <br>
+    </p>
+    <p>Lite video, slutligen. Samma kodprincip. <br>
+    <a href="https://www.youtube.com/watch?v=dxqTDPNW2Pw&list=RDdxqTDPNW2Pw">Grym version av Frans's "I'm sorry"</a>
+    </p>
+
+
+
+    <h2>Interna länkar</h2>
+    == relativa länkar
+    <a href="lekt2-attribut.html">Länk till lekt2-attribut.html i min mapp</a> <br>
+    Mer relevant här att reflektera om ifall det skall öppnas i ny flik. <br>
+    Det går utmärkt att kopiera en rad med alt shift pil-ner... <br>
+    <p>Vill jag skapa nya mappar och flytta filer till, går det utmmärkt. <br>
+    MEN om jag har länkar, måste jag se till att sökvägen uppdateras.  <br>
+    <a href="lekt1-block.html">Länk till lekt1-block.html i min mapp</a>
+        Denna funkar t ex inte. <br>
+        I koden måste jag ange att jag börjar djupare i systemet. <br>
+        <a href="../lektion1/lekt1-block.html">Fungerande länk till lekt1-block</a>
+
+</p>
+<p>
+    <a href="../lektion1/lekt1-block.html">länk till lektion 1</a>
+</p>
+</body>
+
+</html>

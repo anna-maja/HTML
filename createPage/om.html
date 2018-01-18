@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Om mig</title>
+</head>
+<body>
+    <img src="bilder/logo.jpg" 
+    alt="Logo"
+    width="150"
+    height="100"> <br>
+    <a href="index.html"> -- Hem </a> &bull; 
+    <a href="kontakt.html">  Kontakt </a> &bull;
+    <a href="om.html"> Om mig -- </a>
+
+        <h1>Om</h1>
+        Den här sidan är skapad som en övning i att bygga sida med länkar.  <br>
+        Länkarna skall finnas med på alla sidor och skall vara funktionella på alla sidor. <br>
+        <h2>Information om mig</h2>
+        <img src="bilder/anna-maja.jpg" alt="Anna-Maja"> <br>
+        <p>
+        Stickning! <br>
+        Vandring! <br>
+        Sami! <br>
+        Barnen! <br>
+        <img src="bilder/sticktomte.gif" alt="Stickning"
+        width="150"
+        height="150"     >
+        </p>
+
+        <h2>Lite musik</h2>
+        <audio controls>
+                <source src="ljudfiler/DidgeridooAttack.wav" type="audio/wav">
+        </audio>
+
+        <h2>Lite video</h2>
+
+        <p> Den här snutten är nedladdad och inlagd. <br>
+                <video width="320" height="240" controls>
+                        <source src="" type="video/mp4">
+                        <source src="video/testfilm.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+        </p>
+        <p>Den här är länkad / inbäddad. Koden finns som nedladdningskod via - i det här fallet - Youtube.
+        Det här är väldigt, VÄLDIGT bra!!! <br>
+                        <iframe width="640" 
+                        height="360" 
+                        src="https://www.youtube.com/embed/dxqTDPNW2Pw?list=RDdxqTDPNW2Pw" 
+                        frameborder="0" 
+                        allowfullscreen></iframe>
+       </p>
+       Jag tog bort momentet allow, samt frameborder. <br>
+       Koden funkar ändå, men ger varningar i validering. <br>
+
+       <!-- 
+                        allow="autoplay; encrypted-media" 
+                        Tillåten kod i Youtube, men inte i h tml5. 
+                        == genererar fel i validering.
+       -->
+
+
+        <h2>Veckoschema</h2>
+        <table>
+            <tr><th width="50">Dag</th> <th width="50">Aktivitet</th></tr>
+            <tr><td>Måndag</td><td>Städa</td></tr>
+            <tr><td>Tisdag</td><td>Kim innebandy</td></tr>
+            <tr><td>Onsdag</td><td>Myskväll</td></tr>
+            <tr><td>Torsdag</td><td>Bytesdag</td></tr>
+            <tr><td>Fredag</td></tr>
+            <tr><td>Lördag</td><td>Match / Film hos Sami</td></tr>
+            <tr><td>Söndag</td><td>Träning / Planera inför veckan</td></tr>
+    
+        </table>
+        
+    
+</body>
+</html>

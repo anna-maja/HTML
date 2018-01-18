@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Egenskaper - extended</title>
+    <link 
+    href="https://fonts.googleapis.com/css?family=Amatic+SC|PT+Serif|Kavivanar|Reenie Beanie+cursive" 
+    rel="stylesheet">
+
+    <style>
+        /* Detta är en gruppering. 
+        Vissa egenskaper skall gälla för flera delar av texten.
+        */
+        h1 {
+            font-family: 'Reenie Beanie', cursive;
+            font-size: 4rem;
+            text-shadow: 4px 4px 4px #aaa;
+            text-align: center;
+        }
+        h2, h3, h4, h5, h6 {
+            font-family: Verdana, Geneva, sans-serif; 
+        }  
+        h2 { 
+            font-size: 2rem; 
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        body {
+            font-family: 'PT Serif', serif;
+        }
+        strong {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        em {
+            font-family: Amatic, serif; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Textformatering</h1>
+
+    <h2>Teckensnitt</h2>
+    <p>
+        font-family: fontnamn, ersättningsfont, egenskap <br>
+        t ex <br>
+        font-family: Verdana, Geneva, sans-serif; <br>
+        = i första hand Verdana, annars Geneva. Annars vad som helst som är sans-serif. <br>
+        Monospace == alla tecken har exakt samma bredd. <br>
+        Annars disponeras förhållande mellan tecken beroende på dess utformning. <br>
+        
+    </p>
+    <h3>Demonstration med text</h3>
+    <p style="line-height: 2em">
+        Lorem ipsum, med standard, med extra radavstånd: <br>
+    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+    Modi eum, voluptatum iure cumque minus voluptate veniam <br>
+    ipsam deserunt inventore quidem porro natus <br>
+    ex quod blanditiis delectus rem sed iste exercitationem.
+    </p>
+<p>
+    Lorem ipsum, med ändrat typsnitt. <br>
+    Detta eftersom läsbarheten är bättre med sansserif på skärm, <br>
+    och chrome-standard är Times New Roman. <br>
+<p style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Lorem ipsum dolor <br>
+        sit amet consectetur adipisicing elit. <br>
+        Quasi architecto facere eius expedita dolorum <br>
+        voluptates maxime officiis unde reprehenderit, <br>
+        quia in eos rerum, dicta officia minus placeat earum explicabo consequuntur!</p>
+</p>
+<p>
+    Den texten har ju sin egen, lokala formatering. <br>
+    Lokal formatering prioriteras.
+</p>
+
+
+<h2>Teckenstorlek</h2>
+<p>
+    Anges mest i em eller rem nuförtiden. <br>
+    I worddokument - punkter (pt). Kan ocksoå användas som pixlar. <br>
+    Pixlar är relativt i förhållande till skärmupplösningen! <br>
+    Anges alltid i pixlar i exv chrome.
+</p>
+<p>
+    Storlek i em är i relation till standard. <br>
+    Alltså - "1,5 em" == 1,5 gånger standardstorleken. <br>
+    Om standard = 16 pixlar -> 2 em är 32 pixlar."32px".
+</p>
+Här nedan är Lorem ipsum i dubbel teckenstorlek. <br>
+<p style="font-size:2em">
+    Lorem ipsum dolor <br>
+    sit amet consectetur adipisicing elit. <br>
+    Quasi architecto facere eius expedita dolorum <br>
+    voluptates maxime officiis unde reprehenderit, <br>
+    quia in eos rerum, dicta officia minus placeat earum explicabo consequuntur!
+</p>
+<p> 
+    em == tittar på browserns storlek, och jämför med moderns storlek <br>
+    rem == tittar på browserns storlek coh jämför med ROTENS storlek. <br>
+    Det innebär att format i rem anpassar sig till en större enhet.
+</p>
+
+<h2>Lite mer om fonter / teckensnitt</h2>
+    <p>
+        fonts.google.com!!!! <br>
+        Går att kolla en viss text i alla tillgängliga typsnitt. <br>
+        Selekterat baserat på popularitet.
+    </p>
+<h2>Och formatering av semantik</h2>
+<p>
+    <strong>Detta är skrivet med strong. <br>
+    Jag har angett ett nytt typsnitt. </strong>
+</p>
+<p>
+    <em>Detta är skrivet med em. <br>
+    Jag har angett ett nytt typsnitt.</em>
+</p>
+
+<h2>Skuggning</h2>
+<p>
+    Skuggning - koden anges enligt ett system för hur skuggningen skall ligga i förhållande till texten.
+</p>
+
+<h2>Läsbarhet</h2>
+<p>
+   Här står allt som en behöver veta om
+    <a href="https://webbriktlinjer.se/riktlinjer/39-ge-webbplatsen-en-god-lasbarhet/">god läsbarhet</a>
+</p>
+
+
+
+
+</body>
+</html>
