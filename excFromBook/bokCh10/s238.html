@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>s238 -- Selektorer</title>
+    <link rel="stylesheet" href="s234.css">
+</head>
+<body>
+    <h1>Selektortyper</h1>
+    <p>
+        ...Först och främst - nu använder jag minsann samma formatering som s234.html :-)
+    </p>
+    <p>
+        ...åsså inser jag att jag är lite osäker på vad "barn" och "syskon" innebär i det här sammanhanget...
+    </p>
+    <h2>Universal selector</h2>
+    <p>
+        - alla element i dokumentet. <br>
+        - asterisk
+    </p>
+    <h2>Type selector</h2>
+    <p>
+        - elementnamn <br>
+        - t ex "h1, h2, h3"
+    </p>
+    <h2>Class selector</h2>
+    <p>
+        - klasselement <br>
+        - påverkar dem med ett visst värde efter punkt <br>
+        - t ex ".note" <br>
+        - t ex "p.note" = alla .note-element som ligger i p
+    </p>
+    <h2>ID selector</h2>
+    <p>
+        - baseras på hashtag <br>
+        - alla element med text som är exakt som efter hashtaggen
+    </p>
+    <h2>child selector</h2>
+    <p>
+        - element som är direkt barn till annat element <br>
+        - li&gt;a påverkar alla a-element som är barn till li, men inga andra a-element. <br>
+        ...jag fattar nog inte vad barn är...
+    </p>
+    <h2>Descendant selector</h2>
+    <p>
+        - elemtnt som är underliggande ett annat element, men itne barn till elementet. <br>
+        - p a = påverkar alla a-element som ligger i p-element. <br>
+        - a-elementen kan ha andra element före sig. 
+    </p>
+    <h2>Adjacent sibling selector</h2>
+    <p>
+        - element som är syskon till andra element. <br>
+        - t ex h1+p = påverkar första p efter alla h1, men inte andra p-element. 
+    </p>
+    <h2>General sibling selector</h2>
+    <p>
+        - element som är syskon till varandra, även om det inte är i anslutning till varann. <br>
+        - h1~p = om du har två p-element som är syskon till h1, påverkas båda.  
+    </p>
+
+</body>
+</html>

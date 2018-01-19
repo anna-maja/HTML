@@ -1,0 +1,30 @@
+h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(128,128,155);
+}
+
+p, body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+}
+a {
+    font-family: Tahoma;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link {
+    color: rgb(184, 59, 59);
+    }
+a:visited {
+    color: rgb(98, 136, 93);
+    }
+a:hover {
+    color: black;
+    background-color: yellow;
+    }
+a:active {
+    color: rgb(252, 140, 13);
+    }

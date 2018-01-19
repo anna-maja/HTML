@@ -1,0 +1,35 @@
+body {
+    font-family: arial; 
+    background-color: bisque;
+}
+
+a {
+    opacity: 0.5;
+    line-height: 4;
+}
+a:link {
+    color: rgb(184, 59, 59);
+    }
+a:visited {
+    color: rgb(98, 136, 93);
+    }
+a:hover {
+    color: rgb(255, 1, 1);
+    background-color: rgba(255, 60, 0, 0.418);
+    opacity: 1.0;
+    }
+a:active {
+    color: rgb(252, 140, 13);
+    }
+h1, h2, h3 {
+    color: rgb(163, 77, 77);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.1;
+}
+img {
+    line-height: 4;
+}
