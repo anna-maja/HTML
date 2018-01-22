@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt4 - cascading</title>
+
+    <link rel="stylesheet" href="cascading.css">
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        h1 {
+            color: blue;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h1> Cascading ---- kaskadering </h1>
+    <p>
+        Nu har h1 formatet font-family som ärvs från body, men en färg som overrides. 
+    </p>
+    <p>
+        Varje webbläsare har stnadardmallar. <br>
+        exv h1 == standard*2.
+    </p>
+    <p>
+        Högre prioritet längre ner i listan: <br>
+        <ol>
+         <li>webbläsarmallar</li>
+         <li>externa mallar / separata css-filer</li>
+         <li>Interna mallar (style-taggen i head)</li>
+         <li>Inline-mallar </li>
+
+    </ol>
+    </p>
+    <p>
+        När ett css-dokument har annan formatering, prioriteras den. <br>
+        "Inspektören" visar i prioriteringsordning. <br>
+        Högst upp - fontfärg, nedanför css-filens fontstorlek
+    </p>
+    <p>
+        Hämtar först alla länkade egenskaper. <br>
+        läser in dem. <br>
+        Läser därefter vidare i html-filen, coh väljer ev andra settings som står där. 
+    </p>
+
+    <h1 style="color:red">En till rubrik</h1>
+    <p>
+        ...jag fattar nog inte prioriteringsordningen märker jag. <br>
+        Men för enkelhetsskull: <br>
+        <br>
+        <b style="font-size:1.2rem"> tänk igenom prioriteringen innan och skriv kommandona i rätt ordning...
+        </b>
+
+        <ol>
+            <li>teckensnitt från GoogleFonts</li>
+            <li>länkar till css</li>
+            <li>css i style/head</li>
+            <li>inline-formatering</li>
+        </ol>
+    </p>
+    <p>
+        Det som står längre ner än att det behöver användas, kan inte användas. Ju. <br>
+        Det som läses in sist, används först. 
+    </p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 4 - arv</title>
+    <style>
+        body {
+            color: purple;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            color: aqua;
+        }
+        a {
+            color: red;
+        }
+        li a {
+            text-decoration: none; 
+            color: rgb(252, 142, 16)
+        }
+    </style>
+</head>
+<body>
+    <h1>Rubrik</h1>
+    <p>
+        Alla gemensamma egenskaper läggs i body och ärvs av underliggande element. 
+    </p>
+    <h2>Rubrik 2</h2>
+    <p>
+        Ett till stycke. <br>
+        h2 fick en egen färg, och då prioriteras det före förälderns egenskap. <br>
+        <b>Lorem</b> ipsum dolor sit, <i>amet</i> consectetur adipisicing elit. Nemo, autem.
+    </p>
+
+    <h3>Länk</h3>
+    <p>
+        <a href="http://w3schools.com">w3schools</a> och <a href="http://w3.org">w3</a> <br>
+        Himla bra grejer. <br>
+    </p>
+    <p>
+        och eftersom inte h3 getts egen formatering, har den samma färg som ärvts. Som synes.
+    </p>
+
+    <h2>Länkar i listor</h2>
+    <p>
+        Nedan ligger länkar i en punktlista.
+    </p>
+    <p>
+        Nu skall vi formatera länkar som finns <b>just i list-element</b>. <br>
+        Då anger jag "li a {  } " == utläses som alla a som är barn till li. <br>
+        OBS <b>BARA MELLANSLAG!!!</b> Annars tolkas som annan innebörd. <br>
+        Länkar i listor skall INTE vara understrukna, säger min style-kod. <br>
+        Min kod säger också att länkar i listor skall ha annan färg == det tar alltså bort arvet från "länkar i allmänhet"
+    </p>
+    <ul>
+        <li> 
+            <a href="länkexempel.html">En länk</a> <br>
+
+        </li></ul>
+
+</body>
+</html>

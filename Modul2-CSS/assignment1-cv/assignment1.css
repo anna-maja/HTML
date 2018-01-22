@@ -1,0 +1,50 @@
+body {
+    font-family: 'Montserrat';
+    color: black;
+    width: 800px;
+    padding: 0; 
+    background-image: url("bilder/bakgrund.jpeg");
+    background-color: white;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgb(175, 72, 98);
+    padding: 10px;
+}
+div {
+    border: 2px solid rgba(245, 126, 126, 0.295);
+    margin: auto;
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;   
+}
+
+h1 {
+    font-family: Nothing You Could Do;
+    font-weight: bold;
+    font-size:2rem;
+    color:rgb(60, 15, 102);
+}
+h2, h3 {
+    border-bottom-style: solid; 
+    border-bottom-color: rgb(245, 126, 126);
+}
+h3 {
+    font-style: italic;
+    color: rgba(110, 88, 88, 0.616);
+}
+p, ul a:link {
+    text-decoration: none;
+}
+a:link {
+    color: rgb(179, 8, 17);
+}
+a:visited {
+    color: rgb(245, 126, 126);
+}
+a:hover {
+    font-weight: bold; 
+    text-decoration: none;
+}

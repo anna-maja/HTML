@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lektion 4 - formatera länkar</title>
+    <style>
+        
+        body {
+            color: red;
+        }
+        a { 
+            font-family: 'Lucida Sans';    
+        }
+        a:link {
+            color: rgb(101, 155, 21);
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            font-size: 1.2rem;
+            font-weight: bold; 
+        }
+ /*  andra element än länkar kan ändras vid hovring, men det betyder inte att man skall göra det...
+      h1:hover {
+            color: blueviolet;
+        }
+ */ 
+        ul a:link, ul a:visited {
+            color: rgba(165, 42, 42, 0.685);
+            text-decoration: none;
+        }
+        ul a:hover {
+            color: rgb(250, 196, 131);
+            text-decoration: underline;
+        }
+     </style>
+  
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">Hem</a>
+        </li>
+        <li>
+            <a href="#">Om oss</a>
+        </li>
+        <li>
+            <a href="#">Tjänster</a>
+        </li>
+        <li>
+            <a href="#">Kontakt</a>
+        </li>
+    </ul>
+    
+    <h1>Länkformatering</h1>
+
+    <h2>Standard</h2>
+    Att skapa olika egenskaper för länk, besökt länk, hovring och aktiv <br>
+    Ordningen skalla lltid vara densamma. <br>
+    <ul> 
+        <li>länk</li>
+        <li>besökt</li>
+        <li>hovring</li>
+        <li>aktiv länk</li>    
+    </ul>
+    
+    <h2>Exempel</h2>
+    Info om besökta länkar lagrat i cache. == även om en länk öppnats för länge sen, är status "är öppnad tidigare". <br>
+    <a href="http://dn.se">DN</a> <br>
+    <a href="http://aftonbladet.se">Aftonbladet</a> <br>
+    <a href="http://laget.se">Laget.se</a> <br>
+    
+</body>
+</html>
