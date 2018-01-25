@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt5 - listor i CSS</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+        }
+        ul.first{
+            list-style-type: none;
+            margin:20px;
+            padding:20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS - listor</h1>
+
+
+    <h2>Allmän formatering</h2>
+        Formateras nu i style i head. <br>
+        li*5 == genererar lista med 5 punkter. <br>
+        list-style == specifierar punkttyp <br>
+        lista med cirklar, ingen padding, inga marginaler == punkterna hamnar utanför sidfönstret.<br>
+
+        <ul>
+            <li>Punkt 1</li>
+            <li>Punkt 2</li>
+            <li>Punkt 3</li>
+            <li>Punkt 4</li>
+            <li>Punkt 5</li>
+        </ul> <br>
+        <p>
+            Egenskaperna i head kommer att formatera ALLA listor. <br>
+            Lösningen, om en vill ha olika format är - TADAAA! - klasser. 
+        </p>
+
+    <h2>Klassformaterade listor</h2>
+    <p>
+        formateras med typ.klassnamn, t ex ul.a == regel a som opererar på alla ul. <br>
+        == SPECIFIK KLASS
+    </p>
+    <p>
+        list-style-type: none; <br>
+        margin:20px; <br>
+        padding:20px; <br>
+        font-family: Arial, Helvetica, sans-serif; <br>
+    </p>
+    <ul class="first">
+        <li>Punkt 1</li>
+        <li>Punkt 2</li>
+        <li>Punkt 3</li>
+        <li>Punkt 4</li>
+        <li>Punkt 5</li>
+    </ul> <br>
+    <p>
+        Jag behöver bara skriva klassnamnet, eftersom regeln skrivs in i ul.
+    </p>
+    <h2>Vertikala css-menyer</h2>
+    <h3>1. Lägg in lista med önskad längd i body</h3>
+
+
+</body>
+</html>

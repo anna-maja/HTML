@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listor 2</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+        }
+        ul.first{
+            list-style-type: none;
+            margin:20px;
+            padding:20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul#navigation a{
+            display: block;
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            font-family:Courier New, Courier, monospace;
+            background-color: blue;
+            color:white;
+            width: 100px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+            text-decoration: none;
+        }
+
+        ul#navigation a:hover {
+            text-decoration: underline;
+            background-color: rgb(164, 164, 238);
+        }
+        ul#navigationInline a{
+            display: flex;
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            font-family:Courier New, Courier, monospace;
+            background-color: blue;
+            color:white;
+            width: 100px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+            text-decoration: none;
+        }
+
+        ul#navigationInline a:hover {
+            text-decoration: underline;
+            background-color: rgb(164, 164, 238);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Formatera listor</h1>
+    Formateras nu med ul#navigation a. <br>
+    Namnet ul#navigation a anger att regeln navigation bara skall användas på ul med a-element. <br>
+    # == id == alltid unikt == används bara en gång. <br>
+    <p>
+           
+    </p>
+        <ul id="navigation">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Tjänster</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    
+    <h2>Annan lista med first-klassen</h2>
+
+    <ul class="first">
+        <li>En punkt</li>
+        <li>En punkt</li>
+        <li>En punkt</li>
+        <li>En punkt</li>
+        <li>En punkt</li>
+    </ul>
+    <h2>Padding, width, height</h2>
+    <p>
+        funkgar inte. Listelement fungerar som inline == det tar inte in andra format. <br>
+        Endast innehållet fomateras, inte själva helheten.
+    </p>
+    <p>
+        Då får vi omvandla till block-element. "display: block"
+    </p>
+    <h2>Inline-block</h2>
+    Inlineblock används på list-items
+    <ul id="navigationInline">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Tjänster</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+</body>
+</html>

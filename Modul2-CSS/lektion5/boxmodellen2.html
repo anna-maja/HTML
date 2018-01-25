@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt5-mer om boxmodellen  </title>
+    <style>
+    body {
+        margin: 50px;
+        border: 2px solid lightblue;
+        padding: 25px;
+        }
+    div {
+        background-color: blueviolet;
+        border: 10px solid greenyellow;
+    }
+    </style>
+</head>
+<body>
+    <h1>Mer om boxmodellen</h1>
+    I denna fil har jag lagt in egenskaper i hos body, vilket gör att body får egenskaper på sidan. <br>
+    "margin: 50px;
+    border: 2px solid lightblue;
+    padding: 25px;"
+
+    <h2>Utan något</h2>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deserunt nulla blanditiis numquam. Dignissimos delectus, blanditiis possimus maiores iure hic quidem voluptatibus, reprehenderit architecto ullam magnam natus consequatur sint nobis!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad laboriosam aperiam libero. Maiores iusto iste nihil excepturi, cupiditate fugiat sint quasi? Soluta veritatis, quidem consectetur tempore nemo sapiente est dolor.
+    </div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero earum dolor maiores, distinctio quod deserunt?
+    </div>
+    <h2>Med margin</h2>
+    <div style="margin: 50px">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus accusamus incidunt animi! Repellat adipisci incidunt asperiores et dicta! Dolor dolore aut exercitationem debitis, ratione quaerat ullam doloribus nihil reiciendis? Deleniti velit sunt explicabo tenetur dolor modi ut delectus ex. Culpa, maiores.    
+    </div>
+    <div style="margin: 50px" style="background-color:red">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, nulla!
+    </div>
+    <p>
+        Om jag inte lägger in någon margin alls, blir styckena helt komprimerade. <br>
+        Med "margin: 50px;" blri det luft emellan.
+    </p>
+    <p>
+        Marginalen emellan slås ihop. == margin collapse. <br>
+        Systemet ??? räknar ut att den förstas golv är nästas tak, och att det är TOTALA utrymmet som räknas. 
+    </p>
+
+    <h2>Med padding och margins</h2>
+    <div style="padding:50px" style="margin:50px">
+        en div <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt temporibus accusamus incidunt animi! Repellat adipisci incidunt asperiores et dicta! Dolor dolore aut exercitationem debitis, ratione quaerat ullam doloribus nihil reiciendis? Deleniti velit sunt explicabo tenetur dolor modi ut delectus ex. Culpa, maiores.    
+    </div>
+    <div  style="padding:50px" style="margin:50px">
+        en till div <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, nulla!
+    </div>
+    <p>
+        Det här skapar en vaddering mellan text och kant. <br>
+        Å andra sidan får jag INTE någon marginal mellan de två div-arna.
+    </p>
+    <h2 style="text-align:center">Centrering</h2>
+    <p>
+        Den rubriken blev centrerad.
+    </p>
+    <h2>Formatering av bilder</h2>
+
+
+</body>
+</html>
