@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt6 - fält och arrayer</title>
+</head>
+
+<body>
+    <h1>Fält och arrayer</h1>
+    <h2>Fyra olika fält med olika id-namn</h2>
+    <p id="fname"></p>
+    <p id="lname"></p>
+    <p id="year"></p>
+    <p id="person1"></p>
+    <p id="y"></p>
+    <p id="x"></p>
+
+    <script>
+
+        // skapa array
+        // variabelnamn = ["innehåll"]
+        var person = ["Anna-Maja", "Lithner", 1971];
+
+
+        //arbeta med array 
+        // med indexering hittar jag alla element. 
+        // Startar alltid på 0 == första platsen.
+        // person pekar tillbaka på variabeln här ovanför
+        document.getElementById("fname").innerHTML = person[0];
+        document.getElementById("lname").innerHTML = person[1];
+        document.getElementById("year").innerHTML = person[2];
+
+
+        // skicka en hel array
+        document.getElementById("person1").innerHTML = person;
+
+
+        // ytterligare med hel array
+        // .join() == då läggs värdena ihop men jag bestämmer själv vad elementen skall separeras av. 
+        document.getElementById("y").innerHTML = person.join("  ");
+
+        document.getElementById("x").innerHTML = person.join(", ");
+
+        // .join() == då läggs värdena ihop men jag bestämmer själv vad elementen skall separeras av. 
+        // här använder jag semikolon, eftersom det är json-standard. Bra skit. 
+        // använder jag mellanslag här, och posterna används till annat, kommer mellanslagen att följa med i texten som flyttas.
+        document.getElementById("y").innerHTML = person.join(";");
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt6 - variabler</title>
+</head>
+
+<body>
+    <h1>JavaScript - om variabler</h1>
+
+    <h2>Code-convention</h2>
+    <p>
+        Variabler får börja med bokstav, understreck, dollartecken.
+        <br> I JavaScript är variablerna inte typiska. Dvs inte "int", "double", "String" etc.
+        <br> Vi använder bara namnet "var" istället, och innehållet tolkas av systemet.
+        <br> Använd inte reserverade ord som variabelnamn. 
+    </p>
+    <p>
+        Innehåll med "text text" i dubbelfnuttar, tolkas som sträng.
+        <br> Innehåll utan dubbelfnutt tolkas som variabelnamn!!!
+        <br> == dynamiskt typat.
+    </p>
+
+    <h2>Deklaration och initiering</h2>
+    <p>
+        i nästa p-tagg använder jag ide demo coh get element by id. <br>
+        Jag använder variabelnamnet namn med innehållet Anna-Maja Lithner. <br>
+        ALltså värdet i innerHTML anges med en variabel, istället för <i> innerHTML =
+        "Den här texten skall visas" </i> <br>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        //deklarera och initiera en variabel
+        var namn = "Anna-Maja Lithner";
+        document.getElementById("demo").innerHTML = namn;
+    </script>
+</body>
+
+</html>

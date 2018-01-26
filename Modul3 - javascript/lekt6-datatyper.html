@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt6 - datatyper</title>
+</head>
+
+<body>
+    <h1>Datatyper i JavaScript</h1>
+    <p>
+        object - egenskaper och metoder
+        <br> string - text innanför citationstecken
+        <br> Number - pos/neg heltal
+        <br> Boolean -
+        <br> Undefined - odef
+        <br> Null - saknar värde just nu men har haft värde tidigare.
+    </p>
+    <h2>Lite mer om namn etc</h2>
+    <p>
+        Om ett värde ändras på ett ställe, och motsvarande inte ändras på annat håll, ges inget felmeddelande...
+    </p>
+
+    <h2>Exempel med datatyper</h2>
+    <p>
+        Jag har två p-taggar som anropar varsina funktioner - id "namn" och id "total".
+        <br> "total" ger resultatet av värdena i variablerna "pris" * "antal".
+    </p>
+    <br>
+
+    <p id="namn"></p>
+    <p id="total"></p>
+
+
+    <script>
+
+        //deklarerad och initierad variabel
+        var namn = "Anna-Maja Lithner";
+        document.getElementById("namn").innerHTML = namn;
+
+        // variabler av typen Number == måste skrivas utan citattecken
+        var pris = 95.50;
+        var antal = 5;
+        var total = pris * antal;
+
+        // el == en variabel som refererar till elementat med id="total"
+        var el = document.getElementById("total");
+        el.innerHTML = total + " kr";
+
+    </script>
+
+    <p id="namn"></p>
+    <p id="total2"></p>
+    <script>
+
+        //deklarerad och initierad variabel
+        var namn = "Anna-Maja Lithner";
+        document.getElementById("namn").innerHTML = namn;
+
+        // variabler av typen Number == måste skrivas utan citattecken
+        var pris = 95.50;
+        var antal = 5;
+        var total2 = pris * antal;
+
+
+        // .toLocaleString() anpassar till lokala språkregler, exv omvandlar punkt till komma.
+        var el = document.getElementById("total2");
+        el.innerHTML = total2.toLocaleString() + " kr";
+    </script>
+    <h2>Konstanter</h2>
+    <p>
+        Konstant får bara ha det värde som getts till den. 
+    </p>
+    <p>
+        Konstant skrivs med bara versaler.
+    </p>
+</body>
+
+</html>

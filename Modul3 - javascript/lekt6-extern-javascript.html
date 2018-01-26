@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt6 - extern javascript</title>
+</head>
+
+<body>
+    <h1>Länkning till extern JavaScript</h1>
+    <h2>alert</h2>
+    <p Då krävs filtillägget .js <br>
+        taggen script används INTE i extern js.
+    </p>
+    <p>
+        Jag döper externa filen till exakt samma namn bara med annan filtyp.
+    </p>
+    <p>
+        Länkning görs via taggen script. och isåfall BARA med länk. INGEN övrig text i taggen.
+        <br> Den kommer inte att köras.
+    </p>
+    <p>
+        src == inklistring av alla satser i angivna filen.
+    </p>
+    <p>
+        Separat js-fil brukar inte skapas om det inte <br>
+        1) är väldigt mycket, eller <br>
+        2) det är script som skall nås av andra filer.
+    </p>
+
+    <h2>Satser - statements</h2>
+    <p>
+        en sats == en körning.
+    </p>
+    <p>
+        case-sensitive!!! Kod som är skriven fel kommer helt enkelt inte att köras!!! <br>
+        Ger inget felmeddelande i webbläsaren. Vore taskigt mot användaren... 
+    </p>
+    <h2>Fel</h2>
+    <p>
+        Felmeddelanden i js fångas inte upp av w3c-validatorn.
+        <br>
+        Syns enkelt i ctrl+shift+i-läget på webbsidan, ett rött kryss uppe i menyn. <br>
+        Däremot finns versioner på länkar via w3c. 
+    </p>
+
+
+    <script src="lekt6-externjavascript.js"></script>
+    <script>
+        alert("Hello world, detta är ett nytt script inne i html-filen");
+    </script>
+    <script>
+        Alert("Felskrivet");
+    </script>
+</body>
+
+</html>

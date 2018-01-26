@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt6- stränghantering</title>
+</head>
+
+<body>
+    <h1>Stränghantering</h1>
+    <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">w3schools om stränghantering</a>
+    <br>
+    <p>
+        Innehåller miljarrrder metoder för att hantera stringvariabler.
+    </p>
+    <hr>
+    <h2>Exempel stränghantering - med demo</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        var p = document.getElementById("demo");
+        var namn = "Anna-Maja Lithner";
+
+        p.innerHTML = "Namn: " + namn + "<br>";
+        p.innerHTML += "Antal tecken, inkl mellanslag och bindestreck: " + namn.length + "<br>"
+
+        p.innerHTML += "<br> Namn: " + namn + "<br>";
+        p.innerHTML += "Konvertera till versaler: " + namn.toUpperCase() + "<br>";
+
+        p.innerHTML += "<br> Namn: " + namn + "<br>";
+        p.innerHTML += "Konvertera till gemener: " + namn.toLowerCase() + "<br>";
+
+
+        var arr = namn.split(" ");
+        p.innerHTML += "Konvertera till array: " + arr + "<br>";
+        p.innerHTML += "Förnamnet är " + arr[0] + "<br>";
+
+    </script>
+    <hr>
+    <h2>Exempel stränghantering - med demo2 och demo3</h2>
+    Använder nu en ny variabel som heter arr, som innehåller namn.split(" ").
+    <br> OBS!!! Om jag inte sätter in ett blanksteg, tolkas varje tecken som en enda enhet.
+    <br> Jag har ett blanktecken före namnet.
+    <br> Systemet tolkar blanksteget som innehållet på första platsen.
+    <p>
+        namn = namn.trim(); strippar på alla blankstek.
+    </p>
+
+    <p id="demo2"></p>
+
+    <script>
+        var p2 = document.getElementById("demo2");
+        var namn = " Anna-Maja Lithner";
+        namn = namn.trim();
+        var arr = namn.split(" ");
+        p2.innerHTML += "Konvertera till array: " + arr + "<br>";
+        p2.innerHTML += "Förnamnet är " + arr[0] + "<br>";
+
+    </script>
+    <hr>
+    <h2>Texthantering - string interpolation</h2>
+
+    Hela nedanstående är skapat med ett script.
+    <br> "var text = `h2 Rubrik2 /h2
+    <br> h3 Rubrik3 /h3
+    <br> p Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöfText öslkaj sdlöf /p `;"
+
+    <p id="interpol"></p>
+    <script>
+        var pp = document.getElementById("interpol");
+        var text = `<h2>Rubrik2</h2>
+    <h3>Rubrik3</h3>
+    <p>Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöfText öslkaj sdlöf</p>
+    `;
+
+        pp.innerHTML += text;
+    </script>
+    <hr>
+    <h2>Återanvändning av variabler med ett aktuellt värde</h2>
+
+    Hela nedanstående är skapat med ett script.
+    <br> "var text = `h2 ${namn} /h2
+    <br> h3 Rubrik3 /h3
+    <br> p Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöfText öslkaj sdlöf /p `;"
+    <br> Dollar+måsvinge == string interpolation. Hämtar upp ett värde som redan är inlagt i en variabel.
+
+    <p id="interpol2"></p>
+    <script>
+        var pp = document.getElementById("interpol2");
+        var text = `<h2>${namn}</h2>
+    <h3>Rubrik3</h3>
+    <p>Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöf Text öslkaj sdlöfText öslkaj sdlöf</p>
+    `;
+
+        pp.innerHTML += text;
+    </script>
+    <hr>
+    <h2>Seriös interpolering</h2>
+    <a href="https://en.wikipedia.org/wiki/String_interpolation">härifrån</a>
+
+    <p id="wikipol"></p>
+    <script>
+        var apples = 4;
+        var bananas = 3;
+        var text = document.getElementById("wikipol");
+        text.innerHTML += `I have ${apples} apples` + "<br>";
+        text.innerHTML += `I have ${apples + bananas} fruit` + "<br>";
+    </script>
+    <hr>
+    <h2>Specialtecken i JavaScript</h2>
+    <p>
+        Om man behöver använda specialtecken som ", ', / i text, säkras dessa med \.
+        <br> "It's allright" skrivs som "It\'s allright".
+    </p>
+
+
+</body>
+
+</html>

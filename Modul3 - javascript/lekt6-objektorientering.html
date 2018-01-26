@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Objektorientering</h1>
+
+    <h2>Objekt</h2>
+
+    <h3>Objekt har metoder</h3>
+    <p>
+        Metoder är saker som utför något på objektet.
+        <br>
+    </p>
+
+    <h3>Objekt har egenskaper </h3>
+    <p>
+        Egenskaper / properties.
+    </p>
+    <p>
+        Står att läsa mer i w3schools
+        <a href="https://www.w3schools.com/jsref/default.asp">HÄR</a>
+    </p>
+
+    <h2>Objekten document och element</h2>
+    <p>
+        manipulera == lägga till, ändra etc
+    </p>
+    <p>
+        metoder har ikonen en tom låda med ofärgade kanter.
+        <br> Document.getElementById(eementID: string): HTMLElement ==
+        <br> Metoden getElementById används med string-variabelnd elementId och returnerar HTML-element.
+    </p>
+    <p>
+        Efter nästa punkt kommer egenskaper hos html.
+        <br> exv .innerHTML
+    </p>
+    I nedanstående p-tagg lägger jag in ett id och anropsnamn,
+    <br> och en metod som heter .getElementById.
+    <br>
+
+    <h1>HÄR KOMMER EN P-TAGG SOM JAG INTE HAR SKRIVIT NÅT I</h1>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            "JavaScript kan manipulera HTML-element OCH texten kommer bara genom scriptet";
+    </script>
+    <div id="demo2"></div>
+    <script>
+        document.getElementById("demo2").innerHTML =
+            "<h3>Den här rubriken i den här div-en är bara genererad med JavaScript.";
+    </script>
+</body>
+
+</html>

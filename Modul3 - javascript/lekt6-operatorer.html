@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt6 - operatorer</title>
+</head>
+
+<body>
+    <h1>JavaScript - operatorer</h1>
+    
+    <h2>ex 1 med "demo"</h2>
+    
+    <p id="demo"></p>
+
+    <script>
+        var p = document.getElementById("demo"); //variabelnman
+        p.innerHTML = "TEST";
+    </script>
+    <p>
+        ovanstående p-tagg bara fick värdet av scriptet.
+    </p>
+
+    <h2>ex 2 med "demo2"</h2>
+
+    <p id="demo2"></p>
+
+    <script>
+        var p2 = document.getElementById("demo2");
+
+        var tal1 = 10;
+        var tal2 = 20;
+        var summa = tal1 + tal2;
+
+        p2.innerHTML = summa;
+    </script>
+
+        <h2>ex 3 med "demo3"</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+        var p3 = document.getElementById("demo3");
+
+        var tal1 = "10";
+        var tal2 = 20;
+        var summa = tal1 * tal2;
+
+        p3.innerHTML = summa;
+    </script>
+
+    <h2>Längre exempel med demo4</h2>
+    <p>
+        När jag använder +=, lägger jag till ett nytt innehåll PLUS att det gamla innehållet behålls. <br>
+        ALternativet är =, och då skrivs innehållet över helt med nytt innehåll.
+    </p>
+
+    <p id="demo4"></p>
+
+    <script>
+        var p4 = document.getElementById("demo4");
+
+        var tal1 = 10;
+        var tal2 = 20;
+        var summa = tal1 * tal2;
+
+        p4.innerHTML = "Summa: " + summa + "<br>";
+        p4.innerHTML = "tal 1 = " + tal1 + ", tal 2 = " + tal2 + "<br>";
+        p4.innerHTML += "tal1 < tal2 = " + (tal1<tal2)+ "<br>"; 
+        p4.innerHTML += "tal1 > tal2 = " + (tal1>tal2)+ "<br>"; 
+        p4.innerHTML += "tal1 = tal2 = " + (tal1==tal2)+ "<br>"; 
+      /*  p4.innerHTML = "tal1 < = tal2 = " + (tal1<=tal2)+ "<br>"; 
+      Om jag nu skriver med likhetstecken, skrivs ALLA andra över. 
+      */
+
+        
+    </script>
+    
+
+
+
+
+</body>
+
+</html>
