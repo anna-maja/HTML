@@ -1,15 +1,110 @@
 <!DOCTYPE html>
+
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kims sida - hem</title>
+
+    <title>Kim - startsida</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--  <link rel="stylesheet" href="kim.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oswald" rel="stylesheet">
+
+    <style>
+        body {
+            background: rgb(52, 52, 122);
+            /* For browsers that do not support gradients */
+            background: linear-gradient(to left, rgb(52, 52, 122), white);
+        
+        }
+        #navigation a {
+            display: inline-block;
+            font-family: 'Oswald';
+            font-size: 1.8rem;
+            text-align: center;
+            color: white;
+            width: 110px;
+            text-decoration: none;
+            border-top: white 3px solid;
+            border-left: white 4px solid;
+            border-right: white 4px solid;
+            padding-bottom: 2rem;
+        }
+
+        a:hover {
+            font-weight: bold;
+            background-color: rgb(95, 95, 177);
+            background: linear-gradient(vertical, rgb(52, 52, 122), white);
+        }
+
+
+        h1 {
+            font-family: 'Indie Flower';
+            text-align: left;
+            margin-left: 280px;
+            font-size: 3rem;
+            letter-spacing: 2rem;
+        }
+
+        #div1 {
+            /* margin: 20px; */
+            padding: 10px 40px 10px 40px;
+            height: 200px;
+           }
+        /*
+        formateras med typ.klassnamn, t ex ul.a == regel a som opererar på alla ul. <br>
+        == SPECIFIK KLASS
+        */
+        .logo{
+           float:left;
+            
+        }
+    </style>
+
+
 </head>
+
 <body>
-    <img src="bilder/profilbild.jpg" alt > <br>
-    <br>
-    <a href="https://www.laget.se/HIKF-08">Innebandylaget, Huddinge IK F08</a> - världens kanske bästa lag!
-    
+
+    <!--  Blocket med rubrik, logga, knappar etc.  -->
+    <div id="div1">
+            <img class="logo" src="https://picsum.photos/200" alt="testbild"> 
+        <h1>STARTSIDA</h1>
+        <!--  skapa layouten i #top  -->
+        <!--  text  -->
+
+        <p id="navigation">
+            <a href="home.html" style="margin-left:280px">Startsida</a>
+            <a href="intressen.html"> Intressen </a>
+            <a href="about.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="bilder.html">Bilder</a>
+        </p>
+
+
+
+    </div>
+    <!--  <div style="class: center" -->
+
+
+    <h1> Jag - Kim </h1>
+
+    <img src="bilder/profilbild.jpg" alt="Kim" width="300px">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laborum perferendis sunt fuga necessitatibus vitae voluptatem
+        fugiat. Amet, fuga porro adipisci voluptas, quibusdam aliquam numquam culpa similique iste iusto mollitia!
+    </p>
+    <p>
+        lite text
+        <br> Lite mer text
+        <br> sista textsnutten.
+    </p>
+
 </body>
+
 </html>

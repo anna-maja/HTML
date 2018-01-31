@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skapa funktion och använda SEPARAT js-fil </title>
+    <script src="param-arg-extjs.js"></script>
+</head>
+
+<body>
+    <h1>Funktioner, parametrar och argument</h1>
+    <p>
+        Jag anropar funktionen hej, som nu ligger i separat fil..
+    </p>
+    <p>
+        Det betyder att innan DEN HÄR texten ens kan läsas, har det kommit upp en alert-ruta.
+    </p>
+    <p>
+        Scriptet ligger nu i egen fil! OBS att alla script-taggar måste vara borta.
+    </p>
+    <script>
+        //anropar funktionen hem, med argumentet i parentesen 
+        hej("ett argument som skickas till funktionen hej");
+    </script>
+</body>
+
+</html>

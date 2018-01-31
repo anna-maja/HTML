@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lektions 7 - events och Document Object Model</title>
+</head>
+
+<body onload="alert('Välkommen till vår webshop!')">
+    <h1>Lektion 7 - om events och DOM</h1>
+    <h2>DOM och events</h2>
+    <p>
+        När jag skriver onload="alert('Välkommen till vår webshop!')", är det viktigt att ha korrekta citattecken.
+        <br> I det här exemplet är det en alert, vilket gör att jag måste se meddelandet och klicka på ok för att komma vidare.
+    </p>
+    <p>
+        Här under skriver jag kod för att skapa en knapp.
+    </p>
+    <button>
+        Klicka här!
+    </button>
+
+    <p>
+        Den är tom till en början, men jag kan ladda en knapp med händelse istället.
+    </p>
+    <button onclick="alert('Hej från knappen!')">
+        Klicka och gå vidare!
+    </button>
+    <br>
+    <p>
+        Alert är nu laddat med ett nytt meddelande. Men rutan beter sig på samma sätt.
+    </p>
+
+    <h2>Knappar och ikoner</h2>
+    <p>
+        Nu testar vi vad som kan hända när man sveper över en bild.
+    </p>
+    
+    <button onclick="alert('Nu ser du en bild på en shoppingvagn')">
+        Klicka här!
+    </button>
+    <br>
+    <br>
+    <img src="shopCart.png" 
+    alt="shoppingvagn" 
+    onmouseover="this.src='shopAdd.png'" 
+    onmouseout="this.src='shopCart.png'" 
+
+
+</body>
+
+</html>

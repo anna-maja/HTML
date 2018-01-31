@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>övning slide 40</title>
+    <script src="slide40.js"></script>
+</head>
+
+<body>
+    <h1>Övning slide 40 - beräkningar</h1>
+
+    <h2>Omkrets av rektangel</h2>
+    En rektangels omkrets räknas med (basen * 2) + (höjden * 2).
+    <br>
+
+    <p id="rektangel"></p>
+
+    <script>
+        var h = 10;
+        var b = 4;
+        var omkrets = document.getElementById('rektangel');
+        rektangel.innerHTML = "Beräkning av omkretsen av en rektangel med sidorna " + h + " och " + b + ": " + omkretsRektangel(b, h) + " måttenheter.<br>";
+    </script>
+
+    <h2>Area av en rektangel</h2>
+    En rektangels area beräknas med (basen * höjden).
+    <br>
+
+    <p id="rektangelArea"></p>
+
+    <script>
+        var h = 10;
+        var b = 4;
+        var area = document.getElementById('rektangelArea');
+        rektangelArea.innerHTML += "Beräkning av arean av en rektangel med sidorna " +
+            h + " och " + b + ": " + areaRektangel(b, h) + " areaenheter.<br>";
+    </script>
+
+    <h2>Omkrets av en kvadrat</h2>
+    En kvadrats omkrets beräknas med (sidan * 4), eftersom den har fyra likadana sidor.
+    <br>
+
+    <p id="kvadratOmkr"></p>
+
+    <script>
+        var s = 10;
+        var omkrets = document.getElementById('kvaratOmkr');
+        kvadratOmkr.innerHTML += "Beräkning av omkretsen av en kvadrat med sidan " +
+            s + " måttenheter: " + omkretsKvadrat(s) + " måttenheter.<br>";
+
+    </script>
+
+    <h2>Area av en kvadrat</h2>
+    En kvadrats area beräknas med (sidan * sidan). Det kan också skrivas som sidan<sup>2</sup>.
+    <br>
+
+    <p id="kvadratArea"></p>
+
+    <script>
+        var s = 10;
+        var area = document.getElementById('kvadratArea');
+        kvadratArea.innerHTML += "Beräkning av arean av en kvadrat med sidan " +
+            s + " måttenheter: " + areaKvadrat(s) + " areaenheter.<br>";
+    </script>
+
+</body>
+
+</html>

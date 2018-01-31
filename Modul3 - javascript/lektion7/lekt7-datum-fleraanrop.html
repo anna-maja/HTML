@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lekt7 - datum</title>
+</head>
+
+<body>
+    <h1>Lektion 7</h1>
+    <h2>Datumhantering</h2>
+    Här kommer det bara att komma upp ett datum, enligt webläsarens standardformat.
+    <br> Lite klumpigt, men välllldigt korrekt.
+    <br>
+    <p id="datum"></p>
+
+    
+    <p>
+        Vill jag bara använda en del av tidsangivelsen, använder jag någon av de inbyggda metoder som finns för "d." som nu är Date().
+    </p>
+
+    <h2>Lite med text</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi consequatur placeat inventore quasi totam magnam ea omnis,
+        perferendis aut voluptas dolore. Dolorem enim exercitationem saepe aut possimus totam rerum sapiente.</p>
+    <h3>Ytterligare text</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quibusdam?</p>
+
+    <footer id="footer">
+        <hr> Copyright &copy;
+    </footer>
+    <script>
+            // skapa en referens till datumobjekt
+            var d = new Date(); // referens till datum-objektet
+    
+            // skapa en referens till p-taggen
+            var p = document.getElementById("datum");
+    
+            // visa innehållet i datumobjektet, som anropas av innerHTML i p-referensen
+            p.innerHTML = d + "<br>" + "och sen ett bättre format: ";
+    
+            // visa rimligare format av datum
+            p.innerHTML += d.getFullYear();
+    
+            // skapar variabel för footer
+            var footer = document.getElementById("footer");
+    
+            // anropar 
+            footer.innerHTML += d.getFullYear();
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>övning slide 37</title>
+
+</head>
+
+<body>
+    <h1>25%, 12% och 6%</h1>
+    <script src="slide37.js"></script>
+    <p id="demo"></p>
+    
+    <script>
+        var pris = 100;
+        var el = document.getElementById('demo');
+        el.innerHTML = "<h2>Beräkning av moms 25%</h2> <br> 100 kr med 25% moms innebär " + moms25(pris) + " kr.<br>";
+        el.innerHTML += "<h2>Beräkning av moms 12%</h2> <br> 100 kr med 12% moms innebär " + moms12(pris) + " kr.<br>";
+        el.innerHTML += "<h2>Beräkning av moms 6%</h2> <br> 100 kr med 6% moms innebär " + moms6(pris) + " kr.<br>";
+        el.innerHTML += "<h2>Beräkning av moms med alla momssatser</h2> <br>" +  momsAlla(pris) + "<br>";
+    </script>
+    
+
+    <br>
+    När jag kopplar till js-sidan, aktiveras den metod jag har anropat.
+
+
+
+
+
+
+</body>
+
+</html>

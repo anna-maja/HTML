@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 7 - objekt, konstruktorer etc</title>
+</head>
+
+<body>
+    <h1>Lektion 7 - objekt, konstruktorer etc</h1>
+
+    <h2> arbeta med objekt i JavaScript</h2>
+    <h3>Constructor notation</h3>
+    Först kommer scriptet att skapa instansera ett objekt med constructor notation.
+    <br> Med "instansnamn." kommer jag åt alla inbyggda egenskaper. Men jag kan också skapa egna egenskaper med samma syntax.
+    <br> Skapar en ny metod med nyckelordet function. "obj.hello = function()" åsså lite måsvingar.
+    <br>
+    <br> Anropet av metoden sker också inne i script-taggen.
+    <br>
+    <br> Jag kan skapa en massa metoder, som t ex beräknar något utifrån en inmatning, eller whatnot.
+
+    <h3>console.log och övriga flikar i inspektören</h3>
+    <p>
+        Det jag skriver syns bara i console, som kommer åt via inspektören. Den har en egen flik.
+        <br> Jag kan enkelt se exakt hur mina kodrader ser ut, genom att skriva in delar av kommandon.
+        <br> Autokompletteras med tab.
+    </p>
+    <p>
+        I fliken source syns hela koden.
+        <br> Jag kan laborera med koden i inspektören, utan att den ändras. Det är bara en lokal arbetskopia!
+    </p>
+    <p>
+        Egenskaper skapas med primitiva typer.
+        <br> Metoder skapas med function.
+    </p>
+    <p>
+        Det första är att konsollen visar "Hej " + mitt inmatade namn.
+    </p>
+    <h3>Literal notation</h3>
+    <p>
+        Det andra är att jag använder literal notation. <br>
+        Pekar jag mot saker som används inne i objektet (inom måsvingarna), använder jag this. T ex "this.egenskap" <br>
+        Pekar jag mot saker utanför objektet, använder jag objektnamnet. T ex "objektnamn.metod();"
+    </p>
+    <p>
+        Efter literal notation kan jag enkelt skapa en instans av detta, och anropa med signaturens relevanta värden.
+    </p>
+    <p>
+        Längst ner i html-filen, ligger hela script-taggen.
+    </p>
+
+
+    <script>
+
+        // skapa en instans av ett objekt mha konstruktor
+        var obj = new Object(); // ny instans av Object, som heter obj.
+
+        // skapa en egenskap till obj
+        obj.name = "Anna-Maja Lithner";
+
+        // skapa en metod till obj
+        obj.hello = function () {
+            console.log("Hej " + obj.name);
+        }
+
+        // anrop av metoden hello
+        obj.hello();
+
+        // skapa objekt med {} (literal notation)
+        var person = { // allt jag gör nu, hör till mitt nya objekt, min nya instans.
+            name: "Bergsdvärgen Tanarog", // detta är en egenskap. OBS kommatecken, OBS kolon!!!
+            hello: function () { // här visar jag att jag skapar en metod som heter hello
+                console.log("Var hälsad, " + this.name); // genom att skriva this.name så förstår systemet att det pekar på just detta.
+            } // här avslutas _metoden_
+        } // här avslutas _objektet_
+        // genom att peka på this.name, visar jag att jag vill använda name som ligger i just det här objektet. 
+
+        // och så anrop av metoden:
+        person.hello();
+
+        // skapa klass i  JavaScript
+        class Person {
+            constructor(firstname, lastname) { // instansvariabler
+                this.firstname = firstname;
+                this.lastname = lastname; 
+            } // slut på konstruktormetoden
+            fullnamne() {   // metod som returnerar hela namnet, mha instansvariablerna. 
+                return this.firstname + " " + this.lastname;
+            } // slut på fullname-metoden
+        } // slut på klassen.
+
+        // skapa en instans av klassen Person
+        var p1 = new Person("Aina", "av Skogsfolket");
+        console.log(p1.firstname);
+        console.log(p1.lastname);
+        console.log(p1.fullnamne); // detta skriver ut hur metoden ser ut!!!
+        console.log(p1.fullnamne());
+        console.log(p1);
+
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 7 - inmatningsfält</title>
+</head>
+<body>
+    <h1>Lektion 7 - inmatningsfält</h1>
+    <h2>Ett exempel på inmatningsfält</h2>
+    Prompt är en funktion som skapar inmatningsfält. <br>
+    I rubriken här nedan står bara "Hej" och et-nbsp, och namnet matas in i ruta. <br>
+    nbsp skriver jag in för att visa tydligt att det är ett mellanslag. 
+    <h3 id="demo">Hej&nbsp;</h3>
+    
+<script>
+    var namn = prompt("Vad heter du?");
+    document.getElementById("demo").innerHTML += namn;
+</script>
+
+</body>
+</html>

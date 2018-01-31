@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skapa funktion </title>
+
+    <script>
+        // skapa void-funktion med en parameter
+        function hej(msg) {
+            // funktionen hej skickar ett meddelande vidare till metoden alert
+            alert(msg);
+            return 0; // void == metoden behöver inte returnera något. 
+        }
+    </script>
+</head>
+
+<h1>Funktioner, parametrar och argument</h1>
+<p>
+    Jag anropar funktionen hej, som skapades i script uppe i head.
+</p>
+<p>
+    Det betyder att innan DEN HÄR texten ens kan läsas, har det kommit upp en alert-ruta. 
+</p>
+<p>
+    Scriptet skall helst ligga i en egen fil.
+</p>
+<script>
+    //anropar funktionen hej, med argumentet i parentesen 
+    hej("ett argument som skickas till funktionen hej")
+</script>
+
+<body>
+
+</body>
+
+</html>
