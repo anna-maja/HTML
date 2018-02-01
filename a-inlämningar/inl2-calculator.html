@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+
+    <title></title>
+    <style>
+        div {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inlämningsuppgift 2, del 2</h1>
+
+    <br>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="display" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" name=" backspace " value="  " onclick="calculator.display.value +='7' ">
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <input type="button" class="operator" name=" divide " value="/" onclick="calculator.display.value+= '/'">
+                    <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name=" seven " value="7" onclick="calculator.display.value +='7' ">
+                </td>
+                <td>
+                    <input type="button" name=" eight " value="8" onclick="calculator.display.value +='8' ">
+                </td>
+                <td>
+                    <input type="button" name=" nine " value="9" onclick="calculator.display.value +='9' ">
+                </td>
+
+                <td>
+                    <input type="button" class="operator" name=" times " value="*" onclick="calculator.display.value+= '*'">
+                    <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name=" four " value="4" onclick="calculator.display.value +='4' ">
+                </td>
+                <td>
+                    <input type="button" name=" five " value="5" onclick="calculator.display.value +='5' ">
+                </td>
+                <td>
+                    <input type="button" name=" six " value="6" onclick="calculator.display.value +='6' ">
+                </td>
+
+                <td>
+                    <input type="button" class="operator" name=" minus " value="-" onclick="calculator.display.value+= '-'">
+                    <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name=" one " value="1" onclick="calculator.display.value +='1' ">
+                </td>
+                <td>
+                    <input type="button" name=" two " value="2" onclick="calculator.display.value +='2' ">
+                </td>
+                <td>
+                    <input type="button" name=" three " value="3" onclick="calculator.display.value +='3' ">
+                </td>
+                <td>
+                    <input type="button" name=" plus " value="+" onclick="calculator.display.value += '+'">
+                    <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name=" clear " value="C" onclick="calculator.display.value =' ' ">
+                </td>
+                <td>
+                    <input type="button" name=" zero " value="0" onclick="calculator.display.value +='0' ">
+                </td>
+                <td>
+                    <input type="button" name=" point " value="." onclick="calculator.display.value +='.' ">
+                    <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
+                </td>
+                <td>
+                    <input type="button" name=" equals " value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+    <h2>Instruktion</h2>
+    <p>
+        Skapa en enkel miniräknare i JavaScript.
+        <br> Miniräknaren ska stödja att man matar in ett tal (med eller utan decimaler),
+        <br> väljer ett räknesätt (+, - , * eller / ),
+        <br> matar in nästa tal och sedan utför beräkningen då man trycker på en lika-medknapp (=).
+        <br> Formatera utseendet med CSS (valfritt).
+    </p>
+    <br>
+    <h2>Utförande</h2>
+    <h2>kommentarer</h2>
+    <p>
+        För varje knapp gäller att jag anger type button, som skapar en knapp,
+        <br> namn, som är namnet i text,
+        <br> value, värdet, som är det som kommer att användas i beräkningarna,
+        <br> onclick där "calculator.display.value += ' '" är det värde (value) som kommer att visas i rutan (display) i räknaren
+        (calculator).
+        <br> För de knappar som innehåller funktioner, gäller istället att jag anropar klassen operator för att få deras funktion.
+        <br> För likhetstecknet används klassen eval för att genomföra beräkningen av valda knapptryck
+    </p>
+    <h2>Önskad fortsättning</h2>
+    <p>
+        Skulle gärna ha velat försöka skapa en kontrollfunktion, se kod-kommentarer.
+        <br> Antingen som ger felmeddelande vid dubbel inmatning av operatortecken, eller felmeddelande som aktiveras när en
+        trycker på likhetstecknet.
+    </p>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -14,3 +14,4 @@ Jag vill helst skapa det som en separat metod:
 varje gång musen förs över en bild, 
 är det just den bilden som visas i det stora fältet.
 */
+

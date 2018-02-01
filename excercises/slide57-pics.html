@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>övning slide 57</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        /* th {
+            width: 200px;
+            height: 200px;
+            border: 1px;
+            border-radius: 25%;
+        }
+
+        td {
+            width: 75px;
+            height: 75px;
+            border: 1px black solid;
+            border-radius: 20%;
+        }*/
+
+        table {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ett urval av bilder från sommaren 2017</h1>
+    <div>
+
+    </div>
+
+    <table>
+        <tr>
+            <th colspan="4">
+                <img id="storBild" src="img1.jpg" alt="bild1" width="300px" height="300px">
+            </th>
+        </tr>
+        <tr> <!-- Allt det här hamnar på samma rad nu. -->
+            <td>
+                <img src="img1.jpg" width="75" height="75" alt="bild1" onmouseover="document.getElementById('storBild').src = 'img1.jpg'">
+            </td>
+
+            <td>
+                <img src="img2.jpg" width="75" height="75" alt="bild2" onmouseover="document.getElementById('storBild').src = 'img2.jpg'">
+            </td>
+
+            <td>
+                <img src="img3.jpg" width="75" height="75" alt="bild3" onmouseover="document.getElementById('storBild').src = 'img3.jpg'">
+            </td>
+
+            <td>
+                <img src="img4.jpg" width="75" height="75" alt="bild4" onmouseover="document.getElementById('storBild').src = 'img4.jpg'">
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

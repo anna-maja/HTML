@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <style>
+        h2 {
+            background-color: yellow;
+        }
+
+        div {
+            background-color: beige;
+        }
+    </style>
+
+    <title>Lektion 8 - grid system</title>
+</head>
+
+<body class="container">
+
+    <h1>Bootstrap - om The Grid System</h1>
+
+
+    <h2>gridsystemet</h2>
+    div.row skapar en rad, div.col skapar en kolumn
+    <br>
+    <p>
+        Innehållets storlek anpassas alltid efter storleken på skärmen.
+        <br> 3 kolumner som nedan, kommer alltid att centreras och autojusteras.
+    </p>
+    <div class="row" style="background:beige">
+        <div class="col">Kolumn 1 (men om texten inte står med, blir kolumnen osynlig. Men finns kvar. </div>
+        <div class="col">Kolumn 2</div>
+        <div class="col">Kolumn 3</div>
+    </div>
+    <br>
+
+
+    <h2 style="background:yellow">Skapa grid med innehåll</h2>
+    <p>
+        Nedanstående är tre kolumner på en rad. Jag har gett den en annan bakgrundsfärg för att se bättre hur det fungerar.
+    </p>
+    <div class="row" style="background:bisque">
+        <div class="col">
+            <h3>Rubrik</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quisquam laboriosam perspiciatis architecto
+                cupiditate perferendis at autem? Hic accusantium earum minus similique ullam laborum quaerat optio non nesciunt,
+                tempora animi.</p>
+        </div>
+        <div class="col">
+            <h3>Rubrik</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic accusantium earum minus similique ullam laborum
+                quaerat optio non nesciunt, tempora animi.</p>
+        </div>
+        <div class="col">
+            <h3>Rubrik</h3>
+            <p>Praesentium quisquam laboriosam perspiciatis architecto cupiditate perferendis at autem? Hic accusantium earum
+                minus similique ullam laborum quaerat optio non nesciunt, tempora animi.</p>
+        </div>
+    </div>
+
+    <br>
+    <h2 style="background:yellow">Skapa grid med olika kolumnbredder</h2>
+    <p>
+        Utgå från max == 12 kolumner. <br>
+        Försöker man lägga in fler kolumner än vad bredden tillåter, kan t ex chrome ändra så att en kolumn då hamnar nedanför de adnra. 
+    </p>
+    <br>
+    <div class="row">
+        <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi aspernatur esse delectus, distinctio assumenda
+            nam quas amet tempore neque alias et quod aut eligendi excepturi harum aliquid eveniet ipsum.
+        </div>
+        <div class="col-6">
+            En rubrik här som skall använda 6 av 12 kolumner, och de andra skall dela systerligt på resten'
+        </div>
+
+        <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis amet neque eveniet rem voluptate excepturi.
+        </div>
+    </div>
+    <br>
+
+    <h2>Visa layouten så som den ser ut på skäm</h2>
+    <p>
+        I inspektören finns ctrl+shift+m --- toggle device toolbar. <br>
+         Öppnar möjligheten att välja skärmtyp och se layouten direkt. 
+    </p>
+ <br>
+    <h2>En rad med kolumner med tre olika bredder</h2>
+
+    <div class="row">
+        <div class="col-2">En kolumn på 2. <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus reprehenderit dolor distinctio perspiciatis porro?</div>
+        <div class="col-6">6. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae repudiandae esse placeat, alias quasi laboriosam eaque rerum nemo laborum ea. Sapiente unde dolorum aperiam at voluptatem itaque harum. Cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quia!</div>
+        <div class="col-4">4. <br>Lorem ipsum dolor sit amet.</div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

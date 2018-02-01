@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>Inlämningsuppgift 2, del 1</title>
+    <script src="js10-10.js"></script>
+    <style>
+        
+        div {
+            background-color: beige;
+        }
+
+        table {
+            margin: 30px;
+            padding: 30px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        th,
+        td {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inlämningsuppgift 2, del 1</h1> <br>
+    <h2>Instruktion</h2> 
+    <p>
+        "Skapa en JavaScript-funktion som visar multiplikationstabellen enligt bilden nedan. Placera funktionen i en separat JS-fil.
+        Testa funktionen i ett HTML-dokument."
+    </p>
+    <p>
+        <img src="inl2_1.PNG" width="200px" height="200px" alt="Tabell">
+    </p>
+<br>
+    <h2>Utförande</h2>
+    <p>
+        Jag har skapat en .js-fil där jag har hela koden för att generera tabell.
+        <br>
+        <b>Yttre for-loop</b>, som går från 1-10. Variabeln är x.
+        <br> Varje varv skall den öppna en rad, göra beräkningar i inre loopen, och stänga raden. 
+        <br> x ökas med 1. <br>
+        I <b>inre loopen</b>, som också går från 1-10, används variabeln y. <br>
+        Här öppnas en cell, beräkning x*y, och cellen sluts. Börjar om, med y ökar med 1.
+    </p>
+    <p>
+        Slutligen returneras hela värdet för den genererade tabellen.
+    </p>
+    <p id="tabell"></p>
+
+    <script>
+        document.getElementById("tabell").innerHTML = tio();
+
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
