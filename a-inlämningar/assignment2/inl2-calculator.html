@@ -22,21 +22,21 @@
     </style>
 </head>
 
-<body>
+<body class="container">
     <h1>Inlämningsuppgift 2, del 2</h1>
 
     <br>
     <form name="calculator">
-        <table id="kontroll">
-
+        <table>
             <tr>
                 <td colspan="4">
-                    <input type="text" name="display" id="display" disabled>
+                    <input type="text" class="display" name="display" id="display" disabled>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="button" name=" backspace " value=" back  " onclick="backa()">
+
+                    <input type="button" class="back" name=" backspace " value=" back  " onclick="backSpace()">
                 </td>
                 <td>
 
@@ -79,8 +79,6 @@
                     <input type="button" class="operator" name=" minus " value="-" onclick="calculator.display.value+= '-'">
                     <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
                 </td>
-
-
             </tr>
             <tr>
                 <td>
@@ -96,7 +94,6 @@
                     <input type="button" name=" plus " value="+" onclick="calculator.display.value += '+'">
                     <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
                 </td>
-
             </tr>
             <tr>
                 <td>
@@ -110,7 +107,7 @@
                     <!-- skulle vilja lägga in kontroll - om knappen trycks igen skall felmeddelande visas -->
                 </td>
                 <td>
-                    <input type="button" name=" equals " value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+                    <input type="button" name=" equals " value="=" onclick="equalControl()">
                 </td>
             </tr>
         </table>
@@ -119,30 +116,52 @@
 
     <h2>Instruktion</h2>
     <p>
-        Skapa en enkel miniräknare i JavaScript.
+        "Skapa en enkel miniräknare i JavaScript.
         <br> Miniräknaren ska stödja att man matar in ett tal (med eller utan decimaler),
         <br> väljer ett räknesätt (+, - , * eller / ),
         <br> matar in nästa tal och sedan utför beräkningen då man trycker på en lika-medknapp (=).
-        <br> Formatera utseendet med CSS (valfritt).
+        <br> Formatera utseendet med CSS (valfritt). ""
     </p>
     <br>
     <h2>Utförande</h2>
-    <h2>kommentarer</h2>
+
+    <h3>Kommentarer</h3>
+
+    <p style=""></p>
     <p>
-        För varje knapp gäller att jag anger type button, som skapar en knapp,
+        <b><i> Tolkning av koden:</i></b> <br>
+        Eftersom jag har återanvänt kod från en tutorial
+        <a href="https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea">(denna, från Codeburst)</a>
+        har jag gått igenom noggrant för att förstå vad koden gör - inte bara att den fungerar.
+        <br> För varje knapp gäller att jag anger type button, som skapar en knapp,
         <br> namn, som är namnet i text,
         <br> value, värdet, som är det som kommer att användas i beräkningarna,
         <br> onclick där "calculator.display.value += ' '" är det värde (value) som kommer att visas i rutan (display) i räknaren
         (calculator).
         <br> För de knappar som innehåller funktioner, gäller istället att jag anropar klassen operator för att få deras funktion.
-        <br> För likhetstecknet används klassen eval för att genomföra beräkningen av valda knapptryck
+        <br> För likhetstecknet används klassen eval för att genomföra beräkningen av valda knapptryck. <br>
+        Eval, om jag har förstått det rätt, är en metod som skapar en beräkning av det som matats in i en sträng. <br>
+        Den har i sin tur en massa inbyggda funktioner. 
     </p>
-    <h2>Önskad fortsättning</h2>
+    <p>
+        Alla knappar ligger i en input-tagg.
+    </p>
+    <p>
+            <b><i> Övriga kommentarer:</i></b> <br>
+            Lösningen för division by zero, blev att bryta loss "onclick"-innehållet och skapa en separat funktion. <br>
+            Eftersom standardvärdet efter division by zero är "Infinity" i displayen, skapade jag en if-sats för att kontrollera: <br>
+            om värdet i displayen är "Infinity", tilldela istället värdet "Division med 0 är otillåten" och returnera det till displayen.
+    </p>
+
+    <h3>Önskad fortsättning</h3>
     <p>
         Skulle gärna ha velat försöka skapa en kontrollfunktion, se kod-kommentarer.
         <br> Antingen som ger felmeddelande vid dubbel inmatning av operatortecken, eller felmeddelande som aktiveras när en
         trycker på likhetstecknet.
+        <br> Detta skulle kräva att all kod för knapparna ligger externt i JavaScript istället...
     </p>
+
+
 
 
     <!-- Optional JavaScript -->

@@ -1,0 +1,39 @@
+
+table {
+    border: 2px solid black;
+    background: red;
+}
+
+.back {
+    width: 80px;
+}
+
+.display {
+    border: 1px; 
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+
+}
+input {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: rgb(243, 236, 236);
+    text-align: center;
+    border-radius: 20%;
+}
+
+h1 {
+    color: black; 
+    border-bottom: 2px solid gray;
+}
+h2, h3 {
+    padding-bottom: 10px;
+    color: gray;
+    border-bottom: 1px solid gainsboro;
+}
+h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
