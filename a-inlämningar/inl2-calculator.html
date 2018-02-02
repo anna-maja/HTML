@@ -27,7 +27,8 @@
 
     <br>
     <form name="calculator">
-        <table>
+        <table id="kontroll">
+
             <tr>
                 <td colspan="4">
                     <input type="text" name="display" id="display" disabled>
@@ -35,10 +36,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="button" name=" backspace " value="  " onclick="calculator.display.value +='7' ">
-                </td>
-                <td>
-
+                    <input type="button" name=" backspace " value=" back  " onclick="backspace()">
                 </td>
                 <td>
 
