@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>Lektion 10 - navigering</title>
+    <style>
+        h2 {
+            color: rgb(32, 32, 88);
+        }
+
+        div {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lektion 10 - navigering</h1>
+    <p>
+        navs - läs mer
+        <a href="https://getbootstrap.com/docs/4.0/components/navs/">här.</a>
+        <br> och
+        <a href="file:///C:/Users/Anna-Maja%20Lithner/Desktop/skola/04Frontend/Frontend-modul-04-bootstrap.pdf">här.</a>
+    </p>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Hem</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Om oss</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Lorem</a>
+        </li>
+    </ul>
+    <p>
+        Flexbox i css
+        <br> läs mer
+        <a href="https://www.w3schools.com/css/css3_flexbox.asp">här.</a>
+    </p>
+    <h2>nav pills</h2>
+    <a href="file:///C:/Users/Anna-Maja%20Lithner/Desktop/skola/04Frontend/Frontend-modul-04-bootstrap.pdf">slides</a>
+    <ul class="nav justify-content-center nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Hem</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Om oss</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Lorem</a>
+        </li>
+    </ul>
+
+
+    <h2>nav tabs</h2>
+    <ul class="nav justify-content-center nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Hem</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Om oss</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Lorem</a>
+        </li>
+    </ul>
+
+    <h2>nav bar - ex 1 från slides</h2>
+    <p>
+        <a href="file:///C:/Users/Anna-Maja%20Lithner/Desktop/skola/04Frontend/Frontend-modul-04-bootstrap.pdf">slides</a>
+    </p>
+    <p>
+        <a href="https://getbootstrap.com/docs/4.0/components/navbar/">läs mer på Bootstrap</a>
+    </p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2>nav bar - ex 2, från Bootstrap</h2>
+    <p>
+        segment döljs mha collapse och kopplade id-n.
+    </p>
+    <!-- Detta skapar "hamburgermenyn" -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">länk till t ex startsida</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Detta skapar "listan" -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Start</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Om oss</a>
+                </li>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
