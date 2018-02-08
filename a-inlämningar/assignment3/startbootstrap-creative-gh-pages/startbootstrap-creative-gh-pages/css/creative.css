@@ -223,6 +223,12 @@ header.masthead p {
   max-width: 400px;
 }
 
+#post-portfolio {
+  text-align:left; 
+  margin-left:none; 
+  margin-right:none
+}
+
 .portfolio-box {
   position: relative;
   display: block;
