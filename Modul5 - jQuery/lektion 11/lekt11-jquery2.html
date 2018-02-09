@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 11 - jQuery</title>
+</head>
+
+<body>
+    <h1>Lektion 11 - jQuery2</h1>
+    <h2>Andra dokumentet med samma mall</h2>
+    
+    <br> Första testet, felmeddelande: "Uncaught ReferenceError: $ is not defined at lekt11-jquery2.html:32" == det betyder att
+    script 1 inte hittar script-länken.
+    <br> == länken måste läggas före egna scriptet.
+    <br>
+    <br> Här skapade jag först ett id i p-taggen, det anropas med $.
+    <br> $ == "välj..."
+    <br>
+    <br> Sen kopplar jag att p-taggarna skall innehålla en viss text.
+    <br> Sen kommer en div med annat script.
+    <br>
+
+    <br>En p-tagg:
+    <p id="demo"></p>
+    <br> En till p-tagg:
+    <p></p>
+    <br> En div:
+    <div></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").html("Hello, world!");
+            $("div").html("Jag heter Anna-Maja och det här är sista lektionen i Frontend.");
+        });
+    </script>
+
+</body>
+
+</html>

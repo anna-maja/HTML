@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 11 - jQuery</title>
+</head>
+
+<body>
+    <h1>Lektion 11 - element selectors</h1>
+
+    
+    <a href="https://www.w3schools.com/jquery/jquery_selectors.asp">w3schools om selectors</a>
+    <br>
+    <a href="https://www.w3schools.com/jquery/trysel.asp">Utmärkt sida för att testa jquery-funktioner</a>
+
+    <h2>Element selectors</h2>
+    Text i p-taggar skall döljas. <br>
+    <br>
+    det görs med .hide, av alla p.
+<br> GLÖM INTE - egna scriptet måste ligga efter src-script!!!
+    <p>
+        text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maiores!
+    </p>
+    <p>
+        text2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis doloribus eos explicabo maiores, sunt nemo!
+    </p>
+    <p>Dölj alla p-taggar</p>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+      <script>
+            $(document).ready(function () {
+                $("p").hide();
+            });
+        </script>
+</body>
+
+</html>

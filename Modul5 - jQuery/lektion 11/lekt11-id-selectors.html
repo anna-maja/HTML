@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 11 - ID-selectors</title>
+</head>
+
+<body>
+    <h1>Lektion 11 - ID-selectors</h1>
+    <h2>ID-selektorer med hashtags</h2>
+    <br>Ingressen skall döljas och knappen skall döljas när jag klickar på knappen.
+    <p id="ingress">
+        <b>Ingress.</b> Den här ska döljas när jag klickar. Här har vi lite text. <br>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, vitae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos praesentium beatae. Cupiditate modi nisi quos quibusdam vero reprehenderit quia?</p>
+
+    <button>Klicka här för att dölja ingressen!</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () { // startar ready
+
+            $("button").click
+                (function () { // startar click
+                    $("#ingress").hide();
+                    $("button").hide();
+                }); // avslutar click
+        }); // avslutar ready
+    </script>
+</body>
+
+</html>

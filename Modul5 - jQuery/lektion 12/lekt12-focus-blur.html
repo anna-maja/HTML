@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 12 - focus, blur</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <h1>Lektion 12 - focus, blur</h1>
+    <p>
+        Focus lägger till egenskaper. <br>
+        blur tar bort egenskaper.
+    </p>
+    <p>
+        Exv klicka i ett fält - färgen ändras. Klicka i ett annat - färgen nollställs, nya färgen ändras.
+    </p>
+
+    <h2>Ändra med focus</h2>
+    <p>
+        Här har jag två taggar namn och e-post som ligger i input-tagg. <br>
+        Mitt script ändrar med .focus bakgrundsfärgen med .addClass("bg-info"). <br>
+        Det innebär att när jag klickar i fältet ändras färgen.
+    </p>
+
+    <form action="">
+        Namn <input type="text">
+        E-post <input type="text">
+    </form>
+
+    
+    <h2>Ändra med blur</h2>
+    <p>
+        Här har jag två taggar namn och e-post som ligger i input-tagg. <br>
+        Mitt script ändrar med .blur, tar bort  bakgrundsfärgen med .removeClass("bg-dark text-light"). <br>
+        Det innebär att när jag klickar i fältet ändras färgen.
+    </p>
+
+    <form action="">
+        Namn <input type="text">
+        E-post <input type="text">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).addClass("bg-dark text-light");
+            })
+            $("input").blur(function () {
+                $(this).removeClass("bg-dark text-light");
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 11 - selectors</title>
+</head>
+
+<body>
+    <h1>Lektion 11 - selectors</h1>
+    <h2>"This-väljare" - this-selector</h2>
+    Jag utgår från samma script-stomme som i tidigare dokument.
+    <br> p-tagg, "klicka här för att ta bort mig"
+    <br> 1. kolla ready.
+    <br> 2. $document ready
+    <br> 3. $p.click(function) == klassen "click" anropas vid klick på p-element.
+    <br> 4. $this.hide == this är det aktuella elementet, hide är vad vi skall göra.
+
+    <h2>PLacering</h2>
+    Scripts kan placeras även i separat fil, och hänvisas med src. 
+
+
+
+
+    <p>Klicka här för att ta bort ett</p>
+    <p>Klicka här för att ta bort två</p>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("p").click(function () {
+                $(this).hide();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

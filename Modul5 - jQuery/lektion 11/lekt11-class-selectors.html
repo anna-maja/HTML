@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 11 - klassväljare</title>
+</head>
+
+<body>
+    <h1>Lektion 11 - class selectors</h1>
+    
+    <a href="https://www.w3schools.com/jquery/jquery_selectors.asp">w3schools om selectors</a>
+    <br>
+    <a href="https://www.w3schools.com/jquery/trysel.asp">Utmärkt sida för att testa jquery-funktioner</a>
+
+    <h2>selektorer utifrån klasstillhörighet</h2>
+    En rubrik med class demo - döljs <br>
+    <h3 class="demo">Rubrik i class demo</h3>
+    En p-tagg med class demo - döljds <br>
+    <p class="demo">
+        P-tagg med class demo. <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque qui corporis laborum fuga blanditiis earum deserunt, laudantium maxime sit rerum natus sequi optio quae facilis minima alias! Autem, quidem suscipit?
+    </p>
+    <p>
+        P-tagg utan demo - döljs inte. <br>Lorem ipsum dolor sit amet. 
+    </p>
+
+    <button id="dolj">Klicka här för att DÖLJA alla från class demo!</button>
+    <button id="visa">Klicka här för att VISA alla från class demo!</button>
+
+    
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () { // startar ready
+
+            $("#dolj").click     // startar click
+                (function () { 
+                    $(".demo").hide(); // döljer element
+                }); // avslutar click
+
+                $("#visa").click     // startar click
+                (function () { 
+                    $(".demo").show(); // visar element
+                }); // avslutar click
+
+        }); // avslutar ready
+    </script>
+</body>
+
+</html>

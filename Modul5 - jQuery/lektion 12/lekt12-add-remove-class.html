@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 12 - add, remove, toggle</title>
+
+    <!-- Implementera Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <style>
+        .important {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Lektion 12</h1>
+    <h2>Add, remove, toggle</h2>
+
+    <p id="demo1">
+        ID: demo1. <br>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, esse.
+    </p>
+    <p id="demo2">
+       ID: demo2. <br>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et consequuntur facere laborum, eligendi iste!   
+    </p>
+
+    <button id="add" class="btn btn-outline-primary">
+        Klicka här för att lägga till en CSS-klass - id:add
+    </button>
+    <br>
+    <button id="remove" class="btn btn-outline-danger">
+        Klicka här för att ta bort en CSS-klass - id:remove
+    </button>
+    <br>
+    <button id="change" class="btn btn-outline-info">
+        Klicka här för att lägga till/ ta bort en CSS-klass - id:toggle
+    </button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#add").click(function () {
+                $("#demo1").addClass("important");
+                $("#demo2").addClass("bg-dark text-light");
+            })
+            $("#remove").click(function () {
+                $("#demo1").removeClass("important");
+                $("#demo2").removeClass("bg-dark text-light");
+            })
+            $("#change").click(function () {
+                $("#demo1").toggleClass("important");
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>

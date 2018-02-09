@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 12 - toggle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <h1>Lektion 12 - toggle</h1>
+    <p>
+        Kontrollera innehåll och ändra vid viss förekomst.
+    </p>
+    <p>
+        Bra grejer: från w3schools: <br>
+        <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadetoggle" target="_blank">fade-toggle</a> <br>
+        <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadeto" target="_blank">fade-to</a> <br>
+        <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle" target="_blank">slide-toggle</a> <br>
+        <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_filters_table" target="_blank">filters-table</a> <br>
+        <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=jQuery" target="_blank">Åsså ett litet test...</a>
+    </p>
+
+    <h2>Exempel</h2>
+    <p>
+        "När jag klickar, vill jag dölja texten som står på knappen."
+        <br> .text(function (i, text) ---- return text === "Visa"? "dölj" : "visa")
+    </p>
+    <p>
+        display:none döljer det aktuella elementet.
+        <br> == från början syns inte texten under knappen.
+    </p>
+    <p>
+        Efter att ha skapat knapp och text, lägger jag in jquery.
+        <br> ".toggle dispalys or hides the matched elements"
+    </p>
+    <p>
+        Jag har nu skapat ett specifikt id för p-taggen som skall visas/döljas.
+        <br> Jag vill använda en metod som tar in en funktion och returnerar en sträng.
+    </p>
+    <p>
+        Iom det identifieras knapptexten, och kan ändras.
+    </p>
+    <button id="demo" class="btn btn-outline-primary">Visa text</button>
+    <p id="p1" style="display:none">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro qui repellat modi eum sit autem, ad facere voluptates vel
+        esse accusamus, veritatis itaque quae ipsam corporis fugit, deserunt maiores laborum.
+    </p>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#demo").click(function () {
+
+                $("#p1").toggle(1000); // detta visar/döljer texten i stycket
+
+                $(this).text(function (i, text) {
+                    // för att visa parametrar i konsol-fönstret:
+                    console.log(i);
+                    console.log(text);
+                    return text === "Visa text" ? "Dölj" : "Visa";
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 12 - toggle class</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <style>
+        .important {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Lektion 12 - toggle class</h1>
+    <p>
+        Metoden toggleClass() växlar mellan addClass och removeClass().
+    </p>
+    <p>
+        Jag skapar ett stycke med ett visst id. Skapar en knapp med en text. <br>
+        style-taggen i head har klassen .important, som sätter om färg och fontvikt. <br>
+        jquery använder .toggleClass med "important" == ändrar det i id-t till egenskaperna i anropade klassen.
+    </p>
+
+
+    <p id="demo">Text</p>
+    <button>Klicka här</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#demo").toggleClass("important");
+            });
+        });
+    </script>
+</body>
+
+</html>

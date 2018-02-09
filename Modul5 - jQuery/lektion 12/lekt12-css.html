@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lektion 12 - css-format och jquery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+<body>
+    <h1>jQuery - Exempel 8</h1>
+    <h2>Ändra CSS-format med jQuery</h2>
+    <p>
+        jQuery "injicerar" css.
+    </p>
+    <p>
+        mitt script säter att för varje "button" click, anropar jag .css med ny bakgrundsfärg och teckenfärg i alla p-element. 
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate labore repellendus optio veritatis soluta fuga libero maiores! Libero id temporibus, veritatis debitis cupiditate voluptatum voluptatem recusandae vero rem totam cum.
+    </p>
+
+    <button>Klicka här</button>
+
+    <p>
+        Däremot att ta bort färgen är en helt annan fråga, som kommer <a href="lekt12-toggle.html" target="_blank">här.</a>
+    </p>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script>
+    $(document).ready(function(){
+     
+        $("button").click(function(){
+            $("p").css("background-color","yellow");
+        })
+        
+    });
+    </script>
+    
+</body>
+</html>
